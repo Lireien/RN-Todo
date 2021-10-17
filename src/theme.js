@@ -1,0 +1,7 @@
+export const THEME = {
+  RED_COLOR:"#e53935",
+  GREY_COLOR:"#757575",
+  NAV_COLOR:"#483d8b",
+  GREEN_COLOR:"green",
+  PADDING_HORIZONTAL:30,
+}
