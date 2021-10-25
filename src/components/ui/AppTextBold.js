@@ -8,5 +8,6 @@ export const AppTextBold = props => (
 const styles = StyleSheet.create({
   default: {
     fontFamily:'raleway-bold'
+    
   }
 })

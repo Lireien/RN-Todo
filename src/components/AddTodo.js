@@ -24,6 +24,7 @@ const pressHandler = () => {
       value={value}
       placeholder='What should you do?'
       autoCorrect={false}
+      maxLength={25}
         
       />
       <AntDesign.Button onPress={pressHandler} name="plussquareo">

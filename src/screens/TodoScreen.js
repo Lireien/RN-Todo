@@ -16,8 +16,8 @@ export const TodoScreen = () => {
 
   const todo = todos.find((t) => t.id === todoId);
 
-  const saveHandler = (title) => {
-    updateTodo(todo.id, title)
+  const saveHandler = async (title) => {
+    await updateTodo(todo.id, title)
     setModal(false);
   };
 
@@ -57,12 +57,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   button: {
-    width: Dimensions.get('window').width / 3,
+    width: Dimensions.get('window').width > 400 ? 150 : 100
   },
   cardTitle: {
-    fontSize: 26,
+    fontSize: 22,
   },
   card: {
-    marginBottom: 20,
+    marginBottom: 30,
+    padding: 15
   },
 });

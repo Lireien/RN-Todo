@@ -1,30 +1,27 @@
-import React from "react";
-import { StyleSheet, View } from "react-native";
-
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 
 export const AppCard = (props) => {
   return (
-  <View style={ {...styles.default, ...props.style} }>
-      {props.children}
-    </View>
-  )
-}
+    <View style={{ ...styles.default, ...props.style }}>{props.children}</View>
+  );
+};
 
 const styles = StyleSheet.create({
   default: {
-    flexDirection:'row',
+    flexDirection: 'row',
     padding: 20,
-    justifyContent:'space-between',
-    alignItems:'center',
-    shadowColor:'#000',
-    shadowRadius:2,
-    shadowOpacity:0.5,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowRadius: 2,
+    shadowOpacity: 0.5,
     shadowOffset: {
-      width:2,
-      height:2
+      width: 2,
+      height: 2,
     },
     elevation: 8,
-    backgroundColor:"#fff",
-
-  }
-})
+    backgroundColor: '#fff',
+    borderRadius: 10
+  },
+});
