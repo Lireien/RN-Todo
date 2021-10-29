@@ -55,7 +55,7 @@ export const MainScreen = () => {
   }
 
   let content = (
-    <View style={{ width: deviceWidth }}>
+    <View style={{ width: deviceWidth, flex: 1 }}>
       <FlatList
         style={styles.list}
         keyExtractor={(item) => item.id.toString()}
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   error: {
     fontSize: 20,
     color: THEME.RED_COLOR,
-    padding: 20
+    padding: 20,
   },
   list: {
     paddingBottom: 50,
